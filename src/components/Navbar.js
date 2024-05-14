@@ -24,7 +24,7 @@ export default function Navbar() {
                         </Link>
                     </ul>
                     <Link href='/contact'>
-                    <button className="font-[21px] rounded-full px-5 py-1 border-[#1976d2] hover:bg-[#1976d2] hover:text-white border">
+                    <button className="font-[21px] rounded-full px-5 py-1 border-[#3236b7] hover:bg-[#3236b7] hover:text-white border">
                         Contact Us
                     </button>
                 </Link>

@@ -17,23 +17,7 @@ export default function RingSvg() {
                 <path d="M-77 -77C51.55 -77 155.76 27.4472 155.76 156.29C155.76 285.132 51.55 389.569 -77 389.569" stroke="#161BAD" stroke-opacity="0.9" stroke-miterlimit="10" />
             </svg>
 
-             {/* CSS for zoom-in animation */}
-             <style jsx>{`
-                .svg-container {
-                    width: 120px; /* Adjust width as needed */
-                    height: auto; /* Adjust height as needed */
-                    animation: scaleAnimation 2s ease-in-out infinite alternate;
-                }
-
-                @keyframes scaleAnimation {
-                    0% {
-                        transform: scale(1);
-                    }
-                    100% {
-                        transform: scale(1.05);
-                    }
-                }
-            `}</style>
+            
 
            
         </div>
