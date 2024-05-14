@@ -1,6 +1,6 @@
 import ArrowSvg from "@/components/svg/ArrowSvg";
 import RingSvg from "@/components/svg/RingSvg";
-import img from "@/assets/contact/NewImages/image.png"
+import img from "@/assets/contact/image.png"
 import Image from "next/image";
 import SmallCircle from "@/components/svg/SmallCircle";
 import ZigzagSvg from "@/components/svg/ZigzagSvg";
