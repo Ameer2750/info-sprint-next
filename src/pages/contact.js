@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="absolute transform translate-x-96 top-5 left-10 ">
                 <SmallCircle />
             </div>
-            <h1 className="font-medium text-center text-[64px]">Contact Us </h1>
+            <h1 className="font-medium text-black text-center text-[64px]">Contact Us </h1>
             <div className="absolute top-6 right-96 translate-x-32">
                 <CircleSvg/>
             </div>
@@ -51,7 +51,7 @@ export default function Contact() {
                 <RightCircle />
             </div>
             <div className="relative ">
-                <h1 className="font-medium text-center text-[40px] mt-24">Let’s Start transforming your business today!</h1>
+                <h1 className="font-medium text-center text-black text-[40px] mt-24">Let’s Start transforming your business today!</h1>
             </div>
             <div className="absolute right-0 ">
                 <RightRing />

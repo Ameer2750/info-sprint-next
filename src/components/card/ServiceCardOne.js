@@ -9,9 +9,9 @@ export default function ServiceCardOne() {
     const textParaClassName = 'text-white text-sm text-center'
 
     return (
-        <div className="py-20 shadow-lg px-6 rounded-xl bg-[#0665c4] flex flex-col items-center justify-center gap-3 ">
+        <div className="py-20 shadow-lg px-6 rounded-xl bg-[#3236b7] flex flex-col items-center justify-center gap-3 ">
             <IoSettingsSharp size={90} color="white" />
-            <h1 className={textHeaderClassName}>User & Audience Insights Analysis</h1>
+            <h1 className={textHeaderClassName}>IT Solutions</h1>
             <p className={textParaClassName}>Data-rich audience insight reports, segmenting of audience based on their online habits, interests, and keywords.</p>
         </div>
     )
