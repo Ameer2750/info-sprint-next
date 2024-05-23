@@ -1,0 +1,48 @@
+/* TabCollapse.module.css */
+.tab-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-button {
+  border-radius: 2xl;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: #fff 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #fff;
+  color: #3236b7;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.card {
+  width: 300px; /* Set your desired width */
+  height: 400px; /* Set your desired height */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}

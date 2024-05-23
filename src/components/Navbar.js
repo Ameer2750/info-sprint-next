@@ -4,22 +4,28 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <header className="max-w-full bg-white shadow">
-            <div className="   px-14">
+        <header className="w-full bg-white shadow  fixed z-50 transition">
+            <div className=" container mx-auto  px-14">
                 <div className="flex justify-between items-center py-2  text-black">
-                    <Link href='/home'>
+                    <Link href='/'>
                         <div>
                             <Image src={Logo} width={90} height={90} />
                         </div>
                     </Link>
                     <div className="flex flex-row justify-between items-center gap-10">
                         <ul className="flex flex-row items-center gap-10 font-[21px]">
-                            <Link href='/home'>
+                            <Link href='/'>
                                 <li>Home</li>
                             </Link>
-                            <li>About Us</li>
-                            <li>Services</li>
-                            <li>Industries</li>
+                            <Link href='/about'>
+                                <li>About Us</li>
+                            </Link>
+                            <Link href='/services'>
+                                <li>Services</li>
+                            </Link>
+                            <Link href='/industries'>
+                                <li>Industries</li>
+                            </Link>
                             <Link href='/careers'>
                                 <li>Careers</li>
                             </Link>

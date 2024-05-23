@@ -1,0 +1,35 @@
+/* styles/ServicesTabs.module.css */
+
+.tab-button {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s;
+    width: 100%; /* Ensure button takes full width of the column */
+  }
+  
+  .tab-button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab-content {
+    padding: 15px;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Space between button and content */
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    overflow: hidden;
+    opacity: 0; /* Initially hidden */
+    max-height: 0; /* Initially collapsed */
+  }
+  
+  .tab-content.active {
+    opacity: 1; /* Show content */
+    width: 1500px; /* Adjust max-height based on content size */
+  }
+  

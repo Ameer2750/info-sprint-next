@@ -13,18 +13,18 @@ import CircleSvg from "@/components/svg/CircleSvg";
 
 export default function Contact() {
     return (
-        <div className="relative container mx-auto ">
-            <div className="absolute top-0">
+        <div className="relative container mx-auto py-20">
+            <div className="absolute top-16">
                 <RingSvg />
             </div>
             <div className="absolute top-44 left-1 ">
                 <ArrowSvg />
             </div>
-            <div className="absolute transform translate-x-96 top-5 left-10 ">
+            <div className="absolute transform translate-x-96 top-20 left-10 ">
                 <SmallCircle />
             </div>
             <h1 className="font-medium text-black text-center text-[64px]">Contact Us </h1>
-            <div className="absolute top-6 right-96 translate-x-32">
+            <div className="absolute top-20 right-96 translate-x-32">
                 <CircleSvg/>
             </div>
             <div className="flex flex-row justify-evenly items-start px-14 py-20 gap-10 ">
@@ -34,7 +34,7 @@ export default function Contact() {
                     <p className="text-[17px]">The digital marketing environment is highly dynamic and competitive. Gain a competitive edge and advance your online presence by making use of our strategic business planning, innovative technology, and in-depth analysis.</p>
                 </div>
             </div>
-            <div className="absolute top-32 translate-y-72 right-40">
+            <div className="absolute top-32 translate-y-96 right-40">
                 <ZigzagSvg />
             </div>
             <div className="absolute translate-x-80 -translate-y-32 left-72" >
@@ -62,7 +62,7 @@ export default function Contact() {
 
 
 
-            <div className='flex flex-col relative lg:gap-5 gap-3 mx-20 mt-5 z-50'>
+            <div className='flex flex-col relative lg:gap-5 gap-3 mx-20 mt-5 '>
                 <div className='flex flex-col gap-2'>
                     <label className='text-white text-sm'>Your Name*</label>
                     <input

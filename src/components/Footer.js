@@ -9,7 +9,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 export default function Footer() {
     return (
         <footer className="w-full bg-[#3236b7] ">
-            <div className=''>
+            <div className='container mx-auto'>
                 <div className='grid lg:grid-cols-4 lg:gap-0 gap-3  py-10 px-14 '>
                     <div className='flex flex-col items-start'>
                         <Link href='/home'>

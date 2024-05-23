@@ -15,30 +15,30 @@ import LeftCircle from "@/components/svg/LeftCircle";
 export default function Careers() {
     return (
 
-        <div className="relative w-full">
-            <div className="absolute top-0">
+        <div className="relative w-full py-20">
+            <div className="absolute top-16">
                 <RingSvg />
             </div>
             <div className="absolute top-44 left-1 ">
                 <ArrowSvg />
             </div>
-            <div className="absolute transform translate-x-96 top-5 left-20 ">
+            <div className="absolute transform translate-x-96 top-20 left-20 ">
                 <SmallCircle />
             </div>
             <h1 className="font-medium text-center text-[64px]">Careers </h1>
-            <div className="absolute top-6 right-96 translate-x-32">
+            <div className="absolute top-20 right-96 translate-x-32">
                 <CircleSvg />
             </div>
             <div className="my-14  flex justify-center items-center ">
                 <Image src={img} width={700} height={900} />
             </div>
-            <div className="absolute top-60 translate-y-96 right-40">
+            <div className="absolute top-96 translate-y-80 right-40">
                 <ZigzagSvg />
             </div>
             <div className="absolute translate-x-80 translate-y-32  left-72" >
                 <DownCircle />
             </div>
-            <div className="absolute translate-x-96 left-60 top-32 translate-y-96  ">
+            <div className="absolute translate-x-96 left-60 top-80 translate-y-96  ">
                 <DownArrow />
             </div>
             <div className="absolute left-4 top-10 translate-y-96 ">

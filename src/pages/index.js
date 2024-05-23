@@ -1,118 +1,113 @@
+import ServiceCardOne from "@/components/card/ServiceCardOne";
+import SimpleSlider from "@/components/SimpleSlider";
 import Image from "next/image";
-import { Open_Sans } from "next/font/google";
-
-const openSans = Open_Sans({ subsets: ["latin"] });
+import ApproachImage from '@/assets/heroimg/apprach.png'
+import RingSvg from "@/components/svg/RingSvg";
+import ArrowSvg from "@/components/svg/ArrowSvg";
+import landingImage from '@/assets/images/image.png'
+import RightRing from "@/components/svg/RightRing";
+import ZigzagSvg from "@/components/svg/ZigzagSvg";
+import DownCircle from "@/components/svg/DownCircle";
+import DownArrow from "@/components/svg/DownArrow";
+import LeftCircle from "@/components/svg/LeftCircle";
+import CircleSvg from "@/components/svg/CircleSvg";
+import SquareCircle from "@/components/svg/SquareCircle";
+import SmallRing from "@/components/svg/SmallRing";
+import img from "@/assets/about/newimages/image.png"
+import ServiceHeader from "@/components/svg/header/ServiceHeader";
 
 export default function Home() {
-  return (
-    <main
-      // className={`flex min-h-screen flex-col items-center justify-between p-24 ${openSans.className}`}
-    >
-      {/* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+
+    return (
+        <div>
+
+            <div className="overflow-x-hidden container mx-auto flex flex-col py-20 relative gap-20 ">
+                <div className="absolute top-16">
+                    <RingSvg />
+                </div>
+                <div className="absolute top-44 left-1 ">
+                    <ArrowSvg />
+                </div>
+                <div className="flex flex-row justify-between items-center px-14  gap-8 " >
+                    <div data-aos='fade-right' data-aos-once='true' data-aos-delay='300' className=" flex flex-col gap-5">
+                        <h1 className="text-xl bg-[#3236b7] text-white rounded-full px-5 pt-1 pb-1.5 ">Empowering Innovation, Accelerating Success</h1>
+                        <p className="text-5xl font-bold">Seamless Transition into <br /> The Digital Future</p>
+                        <p className="text-medium">From Cloud to AI and beyond, we offer tailored solutions for Agility, Scalability, & Growth.</p>
+                    </div>
+                    <div data-aos='fade-left' data-aos-once='true' data-aos-delay='300' className="py-10">
+                        <Image src={landingImage} width={500} height={800} />
+                    </div>
+                </div>
+                <div className="absolute  top-6 left-52 translate-x-32">
+                    <CircleSvg />
+                </div>
+                <div className="absolute top-28 translate-y-96 right-40">
+                    <ZigzagSvg />
+                </div>
+                <div className="absolute translate-x-80 translate-y-32 left-72" >
+                    <DownCircle />
+                </div>
+                <div className="absolute translate-x-96 left-60 top-16 translate-y-96  ">
+                    <DownArrow />
+                </div>
+                <div className="absolute left-4 top-10 translate-y-96 ">
+                    <LeftCircle />
+                </div>
+
+
+            </div >
+
+            <div className="bg-[#ebebfa] flex flex-col gap-14  pt-14 pb-24">
+                <div className="container mx-auto">
+                    <h1 className="text-4xl text-center font-bold">Who Are We ?</h1>
+                    <div className="flex flex-row justify-evenly items-start px-14  gap-12 ">
+                        <Image className="border-2 border-white shadow-lg" src={img} width={550} height={500} />
+                        <div className="flex flex-col gap-8 text-justify">
+                            <h1 className="text-2xl font-semibold">Inspiring Limitless Innovation & Growth Today</h1>
+                            <p className="text-sm leading-6">Since 2008, Infosprint Technology has been a trusted partner in technology and digital transformation solutions. With 15+ years of experience, we empower businesses worldwide to achieve increased efficiency, streamlined operations, and enhanced customer experience through cutting-edge digital transformation solutions.</p>
+                            <p className="text-sm leading-6">Our expertise spans cloud computing solutions, RPA (automating repetitive tasks), SAP & PEGA implementations, Customer Relationship Management (CRM), Business Process Management (BPM), Microsoft Solutions, Salesforce, and DevOps for faster development cycles. With our team of 100+ passionate experts driven by innovation, collaboration, and a client-centric approach, we deliver tailored solutions for your unique needs and help you stay ahead of the curve.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {/* <SimpleSlider /> */}
+            <se className="">
+            <ServiceHeader />
+            </div>
+            <div className="flex flex-col gap-10 container mx-auto ">
+                
+                <div className="flex flex-row gap-10 justify-between items-center mx-14 relative ">
+                    <ServiceCardOne />
+                    <ServiceCardOne />
+                    <ServiceCardOne />
+                </div>
+                <div className="absolute right-0 ">
+                    <RightRing />
+                </div>
+                <div className="absolute right-0 translate-y-52">
+                    <ArrowSvg />
+                </div>
+            </div>
+
+            <div className="flex flex-col gap-10 container mx-auto ">
+                <div className="absolute translate-x-80 -translate-y-0 ">
+                    <SquareCircle />
+                </div>
+                <div className="absolute translate-y-96 ">
+                    <SmallRing />
+                </div>
+                <h1 className="text-4xl text-center font-bold relative">The Infosprint Approach</h1>
+                <div className="flex flex-row gap-10 justify-between items-center mx-14">
+                    <Image src={ApproachImage} width={600} height={600} />
+                    <div className="flex flex-col text-justify gap-5 ">
+                        <h2 className=" text-2xl  font-semibold">Creating Business Growth</h2>
+                        <p className="text-sm leading-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div> */}
-    </main>
-  );
-}
+    )
+} 

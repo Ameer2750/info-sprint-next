@@ -1,0 +1,39 @@
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow:20px;
+  }
+
+  .tab-buttons {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .tab-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 20px;
+    font-weight:500;
+  }
+  .tab-button.active {
+      border-bottom: 2px solid #3236b7; /* Blue underline */
+    }
+
+
+  .tab {
+    display: none;
+    padding: 10px;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .content-row {
+    margin-top: 10px;
+  }

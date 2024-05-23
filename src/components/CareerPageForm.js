@@ -24,7 +24,7 @@ export default function CareerPageForm() {
 
     return (
         <div>
-            <div className='flex flex-col relative lg:gap-5 gap-3 mx-20 mt-5 z-50'>
+            <div className='flex flex-col relative lg:gap-5 gap-3 mx-20 mt-5 '>
                 <div className='flex flex-col gap-2'>
                     <label className='text-white text-sm'>Your Name*</label>
                     <input
